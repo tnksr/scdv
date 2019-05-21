@@ -46,9 +46,6 @@ SkipGramやBoWVよりも文書分類のタスクにおいて精度がよかっ�
 7. 文書中の各単語の単語トピックベクトルを足し合わせ、文書ベクトルを得る。
 8. スパース化
 
-<img border="0" src="./docs/image/wtv.png" height="3">
-
-<img border="0" src="./docs/image/wtv_image.png" height="3">
 
 ## 実装
 
@@ -190,11 +187,6 @@ document_vectors = [get_vector(document) for document in corpus.documents]
 ### 8. スパース化
 
 - 絶対値が小さい要素はゼロにする
-
-
-```python
-sparsity_percentage = 0.7
-```
 
 
 ```python
